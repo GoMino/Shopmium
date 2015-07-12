@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F5E8F2D1B52D6D1002E08FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */; };
+		3F5E8F2F1B52D6D1002E08FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F2E1B52D6D1002E08FF /* ViewController.swift */; };
+		3F5E8F321B52D6D1002E08FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F301B52D6D1002E08FF /* Main.storyboard */; };
+		3F5E8F341B52D6D1002E08FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F331B52D6D1002E08FF /* Images.xcassets */; };
+		3F5E8F371B52D6D1002E08FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F351B52D6D1002E08FF /* LaunchScreen.xib */; };
+		3F5E8F431B52D6D1002E08FF /* ShopmiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F421B52D6D1002E08FF /* ShopmiumTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F5E8F3D1B52D6D1002E08FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F5E8F1F1B52D6D1002E08FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F5E8F261B52D6D1002E08FF;
+			remoteInfo = Shopmium;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F5E8F271B52D6D1002E08FF /* Shopmium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopmium.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5E8F2B1B52D6D1002E08FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F5E8F2E1B52D6D1002E08FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F5E8F311B52D6D1002E08FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F5E8F331B52D6D1002E08FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F5E8F361B52D6D1002E08FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F5E8F3C1B52D6D1002E08FF /* ShopmiumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShopmiumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F5E8F411B52D6D1002E08FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5E8F421B52D6D1002E08FF /* ShopmiumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopmiumTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F5E8F241B52D6D1002E08FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5E8F391B52D6D1002E08FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F5E8F1E1B52D6D1002E08FF = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F291B52D6D1002E08FF /* Shopmium */,
+				3F5E8F3F1B52D6D1002E08FF /* ShopmiumTests */,
+				3F5E8F281B52D6D1002E08FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F5E8F281B52D6D1002E08FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F271B52D6D1002E08FF /* Shopmium.app */,
+				3F5E8F3C1B52D6D1002E08FF /* ShopmiumTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F5E8F291B52D6D1002E08FF /* Shopmium */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */,
+				3F5E8F2E1B52D6D1002E08FF /* ViewController.swift */,
+				3F5E8F301B52D6D1002E08FF /* Main.storyboard */,
+				3F5E8F331B52D6D1002E08FF /* Images.xcassets */,
+				3F5E8F351B52D6D1002E08FF /* LaunchScreen.xib */,
+				3F5E8F2A1B52D6D1002E08FF /* Supporting Files */,
+			);
+			path = Shopmium;
+			sourceTree = "<group>";
+		};
+		3F5E8F2A1B52D6D1002E08FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F2B1B52D6D1002E08FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F5E8F3F1B52D6D1002E08FF /* ShopmiumTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F421B52D6D1002E08FF /* ShopmiumTests.swift */,
+				3F5E8F401B52D6D1002E08FF /* Supporting Files */,
+			);
+			path = ShopmiumTests;
+			sourceTree = "<group>";
+		};
+		3F5E8F401B52D6D1002E08FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E8F411B52D6D1002E08FF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F5E8F261B52D6D1002E08FF /* Shopmium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5E8F461B52D6D1002E08FF /* Build configuration list for PBXNativeTarget "Shopmium" */;
+			buildPhases = (
+				3F5E8F231B52D6D1002E08FF /* Sources */,
+				3F5E8F241B52D6D1002E08FF /* Frameworks */,
+				3F5E8F251B52D6D1002E08FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shopmium;
+			productName = Shopmium;
+			productReference = 3F5E8F271B52D6D1002E08FF /* Shopmium.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F5E8F3B1B52D6D1002E08FF /* ShopmiumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F5E8F491B52D6D1002E08FF /* Build configuration list for PBXNativeTarget "ShopmiumTests" */;
+			buildPhases = (
+				3F5E8F381B52D6D1002E08FF /* Sources */,
+				3F5E8F391B52D6D1002E08FF /* Frameworks */,
+				3F5E8F3A1B52D6D1002E08FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F5E8F3E1B52D6D1002E08FF /* PBXTargetDependency */,
+			);
+			name = ShopmiumTests;
+			productName = ShopmiumTests;
+			productReference = 3F5E8F3C1B52D6D1002E08FF /* ShopmiumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F5E8F1F1B52D6D1002E08FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Amine Bezzarga";
+				TargetAttributes = {
+					3F5E8F261B52D6D1002E08FF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					3F5E8F3B1B52D6D1002E08FF = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 3F5E8F261B52D6D1002E08FF;
+					};
+				};
+			};
+			buildConfigurationList = 3F5E8F221B52D6D1002E08FF /* Build configuration list for PBXProject "Shopmium" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F5E8F1E1B52D6D1002E08FF;
+			productRefGroup = 3F5E8F281B52D6D1002E08FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F5E8F261B52D6D1002E08FF /* Shopmium */,
+				3F5E8F3B1B52D6D1002E08FF /* ShopmiumTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F5E8F251B52D6D1002E08FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5E8F321B52D6D1002E08FF /* Main.storyboard in Resources */,
+				3F5E8F371B52D6D1002E08FF /* LaunchScreen.xib in Resources */,
+				3F5E8F341B52D6D1002E08FF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5E8F3A1B52D6D1002E08FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F5E8F231B52D6D1002E08FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5E8F2F1B52D6D1002E08FF /* ViewController.swift in Sources */,
+				3F5E8F2D1B52D6D1002E08FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F5E8F381B52D6D1002E08FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5E8F431B52D6D1002E08FF /* ShopmiumTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F5E8F3E1B52D6D1002E08FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F5E8F261B52D6D1002E08FF /* Shopmium */;
+			targetProxy = 3F5E8F3D1B52D6D1002E08FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F5E8F301B52D6D1002E08FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5E8F311B52D6D1002E08FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F5E8F351B52D6D1002E08FF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F5E8F361B52D6D1002E08FF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F5E8F441B52D6D1002E08FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F5E8F451B52D6D1002E08FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F5E8F471B52D6D1002E08FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shopmium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F5E8F481B52D6D1002E08FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shopmium/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F5E8F4A1B52D6D1002E08FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShopmiumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopmium.app/Shopmium";
+			};
+			name = Debug;
+		};
+		3F5E8F4B1B52D6D1002E08FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShopmiumTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopmium.app/Shopmium";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F5E8F221B52D6D1002E08FF /* Build configuration list for PBXProject "Shopmium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5E8F441B52D6D1002E08FF /* Debug */,
+				3F5E8F451B52D6D1002E08FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F5E8F461B52D6D1002E08FF /* Build configuration list for PBXNativeTarget "Shopmium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5E8F471B52D6D1002E08FF /* Debug */,
+				3F5E8F481B52D6D1002E08FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F5E8F491B52D6D1002E08FF /* Build configuration list for PBXNativeTarget "ShopmiumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F5E8F4A1B52D6D1002E08FF /* Debug */,
+				3F5E8F4B1B52D6D1002E08FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F5E8F1F1B52D6D1002E08FF /* Project object */;
+}
