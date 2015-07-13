@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3F5E8F2D1B52D6D1002E08FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */; };
-		3F5E8F2F1B52D6D1002E08FF /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F2E1B52D6D1002E08FF /* StartupViewController.swift */; };
 		3F5E8F321B52D6D1002E08FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F301B52D6D1002E08FF /* Main.storyboard */; };
 		3F5E8F341B52D6D1002E08FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F331B52D6D1002E08FF /* Images.xcassets */; };
 		3F5E8F371B52D6D1002E08FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F5E8F351B52D6D1002E08FF /* LaunchScreen.xib */; };
 		3F5E8F431B52D6D1002E08FF /* ShopmiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F421B52D6D1002E08FF /* ShopmiumTests.swift */; };
 		3F5E8F561B52E819002E08FF /* UIView+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F551B52E819002E08FF /* UIView+XibConfiguration.m */; };
-		3F5E8F581B52FB54002E08FF /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E8F571B52FB54002E08FF /* SignupViewController.swift */; };
 		3F7E6BD91B53BCCD008F05C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BD81B53BCCD008F05C7 /* User.swift */; };
 		3F7E6BDC1B53BF5D008F05C7 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BDB1B53BF5D008F05C7 /* AccountManager.swift */; };
 		3F7E6BE31B53C9CF008F05C7 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BDE1B53C9CE008F05C7 /* ArrayExtensions.swift */; };
@@ -22,10 +20,12 @@
 		3F7E6BE61B53C9CF008F05C7 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BE11B53C9CE008F05C7 /* SwiftExtensions.swift */; };
 		3F7E6BE71B53C9CF008F05C7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BE21B53C9CF008F05C7 /* UIViewExtensions.swift */; };
 		3F7E6BE91B53CB3D008F05C7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BE81B53CB3D008F05C7 /* StringExtensions.swift */; };
-		3F7E6BEB1B53E0AC008F05C7 /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BEA1B53E0AC008F05C7 /* RootMenuViewController.swift */; };
-		3F7E6BED1B53E0DF008F05C7 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BEC1B53E0DF008F05C7 /* LeftMenuViewController.swift */; };
-		3F7E6BEF1B53E14A008F05C7 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E6BEE1B53E14A008F05C7 /* CentralViewController.swift */; };
 		3FA6208A1B53FA630037284C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FA6208C1B53FA630037284C /* Localizable.strings */; };
+		3FA6209C1B54078F0037284C /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA620971B54078F0037284C /* CentralViewController.swift */; };
+		3FA6209D1B54078F0037284C /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA620981B54078F0037284C /* LeftMenuViewController.swift */; };
+		3FA6209E1B54078F0037284C /* RootMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA620991B54078F0037284C /* RootMenuViewController.swift */; };
+		3FA6209F1B54078F0037284C /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6209A1B54078F0037284C /* SignupViewController.swift */; };
+		3FA620A01B54078F0037284C /* StartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6209B1B54078F0037284C /* StartupViewController.swift */; };
 		D18A15F5D50F54A7D7DFB4F5 /* Pods_Shopmium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3A0094CE6472DCE314897E /* Pods_Shopmium.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,6 @@
 		3F5E8F271B52D6D1002E08FF /* Shopmium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopmium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5E8F2B1B52D6D1002E08FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F5E8F2E1B52D6D1002E08FF /* StartupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		3F5E8F311B52D6D1002E08FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F5E8F331B52D6D1002E08FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3F5E8F361B52D6D1002E08FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		3F5E8F501B52E777002E08FF /* Shopmium-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shopmium-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F5E8F541B52E819002E08FF /* UIView+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XibConfiguration.h"; sourceTree = "<group>"; };
 		3F5E8F551B52E819002E08FF /* UIView+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XibConfiguration.m"; sourceTree = "<group>"; };
-		3F5E8F571B52FB54002E08FF /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		3F7E6BD81B53BCCD008F05C7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		3F7E6BDB1B53BF5D008F05C7 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountManager.swift; path = Managers/AccountManager.swift; sourceTree = "<group>"; };
 		3F7E6BDE1B53C9CE008F05C7 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
@@ -62,12 +60,14 @@
 		3F7E6BE11B53C9CE008F05C7 /* SwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
 		3F7E6BE21B53C9CF008F05C7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3F7E6BE81B53CB3D008F05C7 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		3F7E6BEA1B53E0AC008F05C7 /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
-		3F7E6BEC1B53E0DF008F05C7 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
-		3F7E6BEE1B53E14A008F05C7 /* CentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
 		3FA6208B1B53FA630037284C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3FA6208E1B53FA780037284C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3FA620921B53FE2A0037284C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		3FA620971B54078F0037284C /* CentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
+		3FA620981B54078F0037284C /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		3FA620991B54078F0037284C /* RootMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMenuViewController.swift; sourceTree = "<group>"; };
+		3FA6209A1B54078F0037284C /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		3FA6209B1B54078F0037284C /* StartupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupViewController.swift; sourceTree = "<group>"; };
 		6DEF70246C21B2C3D8970CB0 /* Pods-Shopmium.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopmium.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shopmium/Pods-Shopmium.release.xcconfig"; sourceTree = "<group>"; };
 		DB3A0094CE6472DCE314897E /* Pods_Shopmium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shopmium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 				3F7E6BDD1B53C9CE008F05C7 /* Extensions */,
 				3F7E6BDA1B53BF26008F05C7 /* Managers */,
 				3F7E6BD71B53BC86008F05C7 /* Models */,
-				3F5E8F591B52FB61002E08FF /* ViewControllers */,
+				3FA620961B54078F0037284C /* ViewContollers */,
 				3F5E8F4E1B52E769002E08FF /* ObjC */,
 				3F5E8F2C1B52D6D1002E08FF /* AppDelegate.swift */,
 				3F5E8F301B52D6D1002E08FF /* Main.storyboard */,
@@ -180,18 +180,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		3F5E8F591B52FB61002E08FF /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				3F5E8F2E1B52D6D1002E08FF /* StartupViewController.swift */,
-				3F5E8F571B52FB54002E08FF /* SignupViewController.swift */,
-				3F7E6BEA1B53E0AC008F05C7 /* RootMenuViewController.swift */,
-				3F7E6BEC1B53E0DF008F05C7 /* LeftMenuViewController.swift */,
-				3F7E6BEE1B53E14A008F05C7 /* CentralViewController.swift */,
-			);
-			name = ViewControllers;
-			sourceTree = "<group>";
-		};
 		3F7E6BD71B53BC86008F05C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +206,18 @@
 				3F7E6BE81B53CB3D008F05C7 /* StringExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3FA620961B54078F0037284C /* ViewContollers */ = {
+			isa = PBXGroup;
+			children = (
+				3FA620971B54078F0037284C /* CentralViewController.swift */,
+				3FA620981B54078F0037284C /* LeftMenuViewController.swift */,
+				3FA620991B54078F0037284C /* RootMenuViewController.swift */,
+				3FA6209A1B54078F0037284C /* SignupViewController.swift */,
+				3FA6209B1B54078F0037284C /* StartupViewController.swift */,
+			);
+			path = ViewContollers;
 			sourceTree = "<group>";
 		};
 		BE2D05A7AC713B10230F993E /* Pods */ = {
@@ -383,18 +383,18 @@
 			files = (
 				3F7E6BE91B53CB3D008F05C7 /* StringExtensions.swift in Sources */,
 				3F7E6BE71B53C9CF008F05C7 /* UIViewExtensions.swift in Sources */,
-				3F7E6BEB1B53E0AC008F05C7 /* RootMenuViewController.swift in Sources */,
-				3F5E8F2F1B52D6D1002E08FF /* StartupViewController.swift in Sources */,
+				3FA620A01B54078F0037284C /* StartupViewController.swift in Sources */,
 				3F5E8F561B52E819002E08FF /* UIView+XibConfiguration.m in Sources */,
 				3F7E6BE31B53C9CF008F05C7 /* ArrayExtensions.swift in Sources */,
-				3F5E8F581B52FB54002E08FF /* SignupViewController.swift in Sources */,
 				3F7E6BD91B53BCCD008F05C7 /* User.swift in Sources */,
 				3F5E8F2D1B52D6D1002E08FF /* AppDelegate.swift in Sources */,
+				3FA6209C1B54078F0037284C /* CentralViewController.swift in Sources */,
+				3FA6209D1B54078F0037284C /* LeftMenuViewController.swift in Sources */,
 				3F7E6BDC1B53BF5D008F05C7 /* AccountManager.swift in Sources */,
-				3F7E6BEF1B53E14A008F05C7 /* CentralViewController.swift in Sources */,
-				3F7E6BED1B53E0DF008F05C7 /* LeftMenuViewController.swift in Sources */,
+				3FA6209F1B54078F0037284C /* SignupViewController.swift in Sources */,
 				3F7E6BE61B53C9CF008F05C7 /* SwiftExtensions.swift in Sources */,
 				3F7E6BE51B53C9CF008F05C7 /* RACExtensions.swift in Sources */,
+				3FA6209E1B54078F0037284C /* RootMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
