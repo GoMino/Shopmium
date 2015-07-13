@@ -17,6 +17,6 @@ class RootMenuViewController: RESideMenu {
         scaleContentView = false
         scaleMenuView = false
         contentViewShadowEnabled = true
-        contentViewInPortraitOffsetCenterX = 100;
+        contentViewInPortraitOffsetCenterX = UIDevice.currentDevice().userInterfaceIdiom == .Phone ? 100: 290;
     }
 }

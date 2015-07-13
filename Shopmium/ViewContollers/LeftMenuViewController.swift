@@ -13,7 +13,7 @@ class LeftMenuViewController: UIViewController {
     @IBOutlet weak var emailOutlet: UILabel!
     
     override func viewWillAppear(animated: Bool) {
-        emailOutlet.text = AccountManager.sharedInstance.currentUser!.email
+        emailOutlet.text = AccountManager.sharedInstance.currentUser?.email
     }
     
     @IBAction func logout(sender: AnyObject) {
