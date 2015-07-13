@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u8g-Er-XZr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Startup View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartupViewController" customModule="Shopmium" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,356 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROMOTIONS PRIVÉES DANS VOTRE MAGASIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFj-q6-Usn">
+                                <rect key="frame" x="26" y="226" width="548" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-shopmium" translatesAutoresizingMaskIntoConstraints="NO" id="SCw-ya-oyr">
+                                <rect key="frame" x="26" y="114" width="548" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SCw-ya-oyr" secondAttribute="height" multiplier="58:11" id="2W7-cR-lYg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-2C-L8A">
+                                <rect key="frame" x="26" y="447" width="548" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="iv3-kB-1C2"/>
+                                    <constraint firstAttribute="width" constant="310" id="zVy-8C-4SN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Inscription avec mon email">
+                                    <color key="titleColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.48209411691008014" green="0.48459201388888884" blue="0.47959621993127144" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iv3-kB-1C2"/>
+                                        <exclude reference="zVy-8C-4SN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="MdC-fx-QPk" kind="show" id="txS-5S-ncI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lFj-q6-Usn" firstAttribute="top" secondItem="SCw-ya-oyr" secondAttribute="bottom" constant="8" id="4ea-S7-mvM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nNh-2C-L8A" secondAttribute="bottom" constant="117" id="4j7-If-LQp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SCw-ya-oyr" secondAttribute="trailing" constant="10" id="6Ez-TE-hrw"/>
+                            <constraint firstItem="lFj-q6-Usn" firstAttribute="trailing" secondItem="SCw-ya-oyr" secondAttribute="trailing" id="B4q-aI-VaB"/>
+                            <constraint firstItem="SCw-ya-oyr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Bgc-L1-ItM"/>
+                            <constraint firstItem="nNh-2C-L8A" firstAttribute="trailing" secondItem="lFj-q6-Usn" secondAttribute="trailing" id="DCM-B1-cmR"/>
+                            <constraint firstItem="lFj-q6-Usn" firstAttribute="leading" secondItem="SCw-ya-oyr" secondAttribute="leading" id="Fpf-7B-anm"/>
+                            <constraint firstItem="SCw-ya-oyr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="fcB-Xm-M1H"/>
+                            <constraint firstAttribute="centerX" secondItem="SCw-ya-oyr" secondAttribute="centerX" constant="-5" id="iuw-o2-kXg"/>
+                            <constraint firstAttribute="centerX" secondItem="lFj-q6-Usn" secondAttribute="centerX" constant="-2.5" id="jEN-bs-puf"/>
+                            <constraint firstAttribute="centerX" secondItem="nNh-2C-L8A" secondAttribute="centerX" id="qKE-mr-Lvx"/>
+                            <constraint firstItem="nNh-2C-L8A" firstAttribute="leading" secondItem="lFj-q6-Usn" secondAttribute="leading" id="v9w-ya-juM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iuw-o2-kXg"/>
+                                <exclude reference="jEN-bs-puf"/>
+                                <exclude reference="qKE-mr-Lvx"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="YXU-DK-GrM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1069" y="347"/>
+        </scene>
+        <!--Root Menu View Controller-->
+        <scene sceneID="lvq-Ux-5Ne">
+            <objects>
+                <viewController id="xUG-gC-MnD" customClass="RootMenuViewController" customModule="Shopmium" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hl9-Xm-N5z"/>
+                        <viewControllerLayoutGuide type="bottom" id="AB0-Ns-fb7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Id4-vE-I2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rjF-73-zeE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiY-lW-mF4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="1174"/>
+        </scene>
+        <!--Shopmium-->
+        <scene sceneID="7fn-wz-hgn">
+            <objects>
+                <viewController id="rg9-8l-RQX" customClass="CentralViewController" customModule="Shopmium" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jGZ-3Q-trV"/>
+                        <viewControllerLayoutGuide type="bottom" id="IEq-s3-0Su"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IGF-YD-fS4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.14999999999999969" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopmium-card" translatesAutoresizingMaskIntoConstraints="NO" id="oge-im-5cP">
+                                <rect key="frame" x="65" y="106" width="470" height="388"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-uB-Zrm">
+                                <rect key="frame" x="16" y="87" width="568" height="493"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oge-im-5cP" secondAttribute="centerX" id="1PL-KV-C8F"/>
+                            <constraint firstItem="bbc-uB-Zrm" firstAttribute="trailing" secondItem="IGF-YD-fS4" secondAttribute="trailingMargin" id="1Sa-ym-yqV"/>
+                            <constraint firstItem="oge-im-5cP" firstAttribute="leading" secondItem="IGF-YD-fS4" secondAttribute="leadingMargin" constant="49" id="Gsq-Fi-Nic"/>
+                            <constraint firstAttribute="centerY" secondItem="oge-im-5cP" secondAttribute="centerY" id="gnT-Cz-bYJ"/>
+                            <constraint firstItem="IEq-s3-0Su" firstAttribute="top" secondItem="bbc-uB-Zrm" secondAttribute="bottom" constant="20" id="jAS-TA-hOH"/>
+                            <constraint firstAttribute="centerY" secondItem="oge-im-5cP" secondAttribute="centerY" id="jBc-XE-AlT"/>
+                            <constraint firstItem="oge-im-5cP" firstAttribute="top" secondItem="jGZ-3Q-trV" secondAttribute="bottom" constant="42" id="k6e-aB-ewY"/>
+                            <constraint firstItem="bbc-uB-Zrm" firstAttribute="top" secondItem="jGZ-3Q-trV" secondAttribute="bottom" constant="23" id="p8l-bj-ktA"/>
+                            <constraint firstItem="oge-im-5cP" firstAttribute="top" secondItem="jGZ-3Q-trV" secondAttribute="bottom" constant="42" id="rZs-p4-A9v"/>
+                            <constraint firstItem="bbc-uB-Zrm" firstAttribute="leading" secondItem="IGF-YD-fS4" secondAttribute="leadingMargin" id="sSs-We-Lox"/>
+                            <constraint firstAttribute="width" secondItem="oge-im-5cP" secondAttribute="height" multiplier="25:19" id="xnf-Pe-oXh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gnT-Cz-bYJ"/>
+                                <exclude reference="k6e-aB-ewY"/>
+                                <exclude reference="xnf-Pe-oXh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopmium" id="9rb-5o-dAb">
+                        <barButtonItem key="leftBarButtonItem" image="menu-alt" id="VIS-xG-M2P">
+                            <color key="tintColor" red="0.90196078430000004" green="0.0" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuClicked:" destination="rg9-8l-RQX" id="s0N-5u-NCf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuOutlet" destination="VIS-xG-M2P" id="WbG-lO-Ucn"/>
+                        <outlet property="serverResponseOutlet" destination="bbc-uB-Zrm" id="bMO-t9-VhE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGA-LG-erZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2602" y="2011"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="x6g-j4-eox">
+            <objects>
+                <viewController id="MdC-fx-QPk" customClass="SignupViewController" customModule="Shopmium" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jgw-7m-BLk"/>
+                        <viewControllerLayoutGuide type="bottom" id="M1D-q0-aeW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ckj-Ti-05z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a4-0h-1R2">
+                                <rect key="frame" x="26" y="187" width="548" height="36"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.0" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="M'inscrire">
+                                    <color key="titleColor" red="0.99484536079999997" green="1" blue="0.98969072160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.90196078430000004" green="0.0" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerEmail:" destination="MdC-fx-QPk" eventType="touchUpInside" id="0XA-NB-9Xf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrer votre adresse email içi" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="03d-RZ-soq">
+                                <rect key="frame" x="26" y="127" width="548" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UbG-DH-j3X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3a4-0h-1R2" firstAttribute="top" secondItem="03d-RZ-soq" secondAttribute="bottom" constant="20" id="9Vc-fX-Kzk"/>
+                            <constraint firstItem="03d-RZ-soq" firstAttribute="width" secondItem="3a4-0h-1R2" secondAttribute="width" id="Beg-l0-anB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="03d-RZ-soq" secondAttribute="trailing" constant="10" id="eLJ-xR-PCE"/>
+                            <constraint firstItem="03d-RZ-soq" firstAttribute="leading" secondItem="Ckj-Ti-05z" secondAttribute="leadingMargin" constant="10" id="lgK-G2-3d7"/>
+                            <constraint firstItem="03d-RZ-soq" firstAttribute="top" secondItem="Jgw-7m-BLk" secondAttribute="bottom" constant="63" id="q5K-cj-X7f"/>
+                            <constraint firstItem="03d-RZ-soq" firstAttribute="centerX" secondItem="3a4-0h-1R2" secondAttribute="centerX" id="q8q-2V-mII"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mailOutlet" destination="03d-RZ-soq" id="qiL-O4-ycn"/>
+                        <outlet property="registerOutlet" destination="3a4-0h-1R2" id="bvn-S7-hEK"/>
+                        <segue destination="xUG-gC-MnD" kind="showDetail" identifier="EnterTheMatrixSegue" id="FLv-GW-K8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uu2-pU-jK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="347"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4jB-gm-yqE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u8g-Er-XZr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wmk-Sf-ecj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99484536082474229" green="1" blue="0.98969072164948457" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.90196078431372551" green="0.0" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99484536079999997" green="1" blue="0.98969072160000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZQY-nL-8rD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7e-bP-56R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="347"/>
+        </scene>
+        <!--Left Menu View Controller-->
+        <scene sceneID="dUO-2C-5tM">
+            <objects>
+                <viewController storyboardIdentifier="leftMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Peo-S1-ift" customClass="LeftMenuViewController" customModule="Shopmium" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D3Q-vO-snC"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRc-Us-DCK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LDn-ba-dyB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeO-Jl-O1V">
+                                <rect key="frame" x="233" y="171" width="72.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopmium-card" translatesAutoresizingMaskIntoConstraints="NO" id="960-fr-I7E">
+                                <rect key="frame" x="202" y="28" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="52h-es-4O1"/>
+                                    <constraint firstAttribute="height" constant="135" id="HeZ-Dp-pr8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.48209411689999998" green="0.48459201390000001" blue="0.47959621990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="68"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz2-C8-fuX">
+                                <rect key="frame" x="16" y="220" width="204" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.48209411689999998" green="0.48459201390000001" blue="0.47959621990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Déconnexion">
+                                    <color key="titleColor" red="0.48209411689999998" green="0.48459201390000001" blue="0.47959621990000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.90196078430000004" green="0.0" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="Peo-S1-ift" eventType="touchUpInside" id="6v7-Zv-dRD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VeO-Jl-O1V" firstAttribute="top" secondItem="960-fr-I7E" secondAttribute="bottom" constant="8" id="9uS-Hb-duY"/>
+                            <constraint firstItem="VeO-Jl-O1V" firstAttribute="centerX" secondItem="960-fr-I7E" secondAttribute="centerX" constant="-0.5" id="NNV-NH-KFI"/>
+                            <constraint firstItem="960-fr-I7E" firstAttribute="top" secondItem="D3Q-vO-snC" secondAttribute="bottom" constant="8" id="NRj-RL-GBX"/>
+                            <constraint firstAttribute="centerX" secondItem="960-fr-I7E" secondAttribute="centerX" constant="30" id="xoX-Ni-poa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailOutlet" destination="VeO-Jl-O1V" id="ZM2-Qm-Ufv"/>
+                        <segue destination="u8g-Er-XZr" kind="showDetail" identifier="ExitTheMatrixSegue" id="zQ0-Rw-FPW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oft-lB-HN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="2015"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OV2-LV-SMp">
+            <objects>
+                <navigationController storyboardIdentifier="contentViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3G3-5z-2Oy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SSC-Kl-3re">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.90196078430000004" green="0.0" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99484536079999997" green="1" blue="0.98969072160000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rg9-8l-RQX" kind="relationship" relationship="rootViewController" id="6go-Aj-OSe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjF-1r-NJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="2011"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo-shopmium" width="580" height="110"/>
+        <image name="menu-alt" width="32" height="32"/>
+        <image name="shopmium-card" width="680" height="680"/>
+    </resources>
 </document>

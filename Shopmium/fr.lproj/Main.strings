@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "Entrer votre adresse email içi"; ObjectID = "03d-RZ-soq"; */
+"03d-RZ-soq.placeholder" = "Entrer votre adresse email içi";
+
+/* Class = "UIButton"; normalTitle = "M'inscrire"; ObjectID = "3a4-0h-1R2"; */
+"3a4-0h-1R2.normalTitle" = "M'inscrire";
+
+/* Class = "UINavigationItem"; title = "Shopmium"; ObjectID = "9rb-5o-dAb"; */
+"9rb-5o-dAb.title" = "Shopmium";
+
+/* Class = "UILabel"; text = "User Mail"; ObjectID = "VeO-Jl-O1V"; */
+"VeO-Jl-O1V.text" = "User Mail";
+
+/* Class = "UIButton"; normalTitle = "Déconnexion"; ObjectID = "Vz2-C8-fuX"; */
+"Vz2-C8-fuX.normalTitle" = "Déconnexion";
+
+/* Class = "UILabel"; text = "PROMOTIONS PRIVÉES DANS VOTRE MAGASIN"; ObjectID = "lFj-q6-Usn"; */
+"lFj-q6-Usn.text" = "PROMOTIONS PRIVÉES DANS VOTRE MAGASIN";
+
+/* Class = "UIButton"; normalTitle = "Inscription avec mon email"; ObjectID = "nNh-2C-L8A"; */
+"nNh-2C-L8A.normalTitle" = "Inscription avec mon email";

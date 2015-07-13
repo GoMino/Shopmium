@@ -1,0 +1,6 @@
+framework module Pods_Shopmium {
+  umbrella header "Pods-Shopmium-umbrella.h"
+
+  export *
+  module * { export * }
+}

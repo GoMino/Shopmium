@@ -8,6 +8,18 @@
 
 import UIKit
 
+let logEnabled = false
+func log(message: String,
+    function: String = __FUNCTION__,
+    file: String = __FILE__,
+    line: Int = __LINE__)
+{
+    if logEnabled {
+        let fileName = file.lastPathComponent.stringByReplacingOccurrencesOfString(".swift", withString: "", options: nil, range: nil)
+        println("[\(fileName):\(line)] \(function) - \(message)")
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

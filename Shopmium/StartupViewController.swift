@@ -8,11 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func reset(segue: UIStoryboardSegue) {
+        //do stuff
+    }
 }
 
